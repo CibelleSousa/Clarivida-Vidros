@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    /* --- Configurações Básicas --- */
+    "target": "ES2020",                       // Compila para uma versão moderna do JavaScript que o Node.js entende.
+    "module": "NodeNext",                      // Usa o sistema de módulos mais recente do Node.js.
+    "moduleResolution": "NodeNext",            // Como o TypeScript encontra os módulos.
+    "outDir": "./dist",                        // Pasta onde os arquivos JavaScript compilados serão salvos.
+    "rootDir": "./src",                        // Pasta onde estão nossos arquivos TypeScript.
+
+    /* --- Configurações de Qualidade de Código --- */
+    "esModuleInterop": true,                   // Melhora a compatibilidade entre diferentes tipos de módulos.
+    "forceConsistentCasingInFileNames": true,  // Garante que os nomes dos arquivos sejam consistentes.
+    "strict": true,                            // Habilita todas as checagens de tipo mais rigorosas. Ótima prática!
+    "skipLibCheck": true                       // Pula a verificação de tipos dos arquivos de dependências (node_modules), acelerando a compilação.
+  },
+  "include": ["src/**/*"] // Diz ao compilador para incluir todos os arquivos dentro da pasta 'src'.
+}
