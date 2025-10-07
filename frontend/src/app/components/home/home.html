@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- Card de seleção -->
+  <div class="controls-card">
+    <h2>Selecione um caso de teste</h2>
+
+    <select #selectCaso (change)="selectedCase = selectCaso.value">
+      <option *ngFor="let caso of casos" [value]="caso">{{ caso }}</option>
+    </select>
+
+    <button (click)="enviar()">Enviar</button>
+  </div>
+
+  <!-- Card do plano de corte -->
+  <div *ngIf="resultado" class="plano-card">
+    <h2>Plano de Corte</h2>
+    <app-plano-de-corte
+      *ngIf="resultado"
+      [largura]="resultado?.largura"
+      [altura]="resultado?.custo"
+      [plano]="resultado?.plano">
+    </app-plano-de-corte>
+  </div>
+</div>

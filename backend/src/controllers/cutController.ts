@@ -22,7 +22,10 @@ export const executarTeste = (req: Request, res: Response) => {
 
     if (noSolucao) {
         const solucao = reconstruirCaminho(noSolucao);
-        res.json(solucao);
+        const solucaoComLargura = {
+        largura: casoTeste.larguraChapa,
+        ...solucao};
+        res.json(solucaoComLargura);
     }
     else {
         res.status(404).json({ message: "Não foi encontrado uma solução para esse caso de teste." });

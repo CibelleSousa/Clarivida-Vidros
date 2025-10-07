@@ -1,0 +1,62 @@
+/* Fundo da página */
+.container {
+  background-color: #6a0dad; /* roxo da página */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  /* vertical */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 40px;  /* espaço entre controles e plano */
+}
+
+/* Card de seleção */
+.controls-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 360px;
+}
+
+/* Inputs */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #580b9e;
+}
+
+/* Card do plano de corte */
+.plano-card {
+  background-color: #ffffff; /* fundo branco */
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 50%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black; /* texto preto */
+}
+
+.plano-card h2 {
+  margin-bottom: 20px;
+}
