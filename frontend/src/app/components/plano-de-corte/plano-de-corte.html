@@ -1,0 +1,32 @@
+<div class="container-plano">
+  <div
+    class="chapa"
+    [style.width.px]="chapaLargura"
+    [style.height.px]="chapaAltura"
+  >
+    <div
+      *ngFor="let p of pecas | slice:0:passoAtual"
+      class="peca"
+      [style.left.px]="p.x * escala"
+      [style.top.px]="p.y * escala"
+      [style.width.px]="p.w * escala"
+      [style.height.px]="p.h * escala"
+      [style.backgroundColor]="p.cor"
+    >
+      {{ p.nome }}
+    </div>
+  </div>
+
+  <button (click)="proximoPasso()" [disabled]="passoAtual >= pecas.length">
+      Próxima Peça
+    </button>
+    
+  <div class="info">
+    <p><strong>Largura:</strong> {{ largura }}</p>
+    <p><strong>Altura (Custo):</strong> {{ altura }}</p>
+    <ul>
+      <li *ngFor="let passo of plano | slice:0:passoAtual">{{ passo }}</li>
+    </ul>
+
+  </div>
+</div>
