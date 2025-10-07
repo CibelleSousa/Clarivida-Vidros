@@ -15,7 +15,7 @@ Este repositório contém o desenvolvimento do Trabalho 1 da disciplina de Intel
 O projeto está organizado em uma arquitetura de **monorepo**, separando claramente as responsabilidades do Back-end e do Front-end para facilitar o desenvolvimento e a manutenção.
 
 * **🖥️ Back-end (`/backend`):** Aplicação Node.js desenvolvida com TypeScript e o framework Express.js. É responsável por toda a lógica de busca, cálculos de heurística e por expor os resultados através de uma API REST.
-* **🌐 Front-end (`/frontend`):** A aplicação Front-end foi desenvolvida em, que será responsável por consumir a API do back-end e apresentar uma interface gráfica amigável para o usuário interagir com o sistema.
+* **🌐 Front-end (`/frontend`):** A aplicação Front-end, desenvolvida em Angular, que será responsável por consumir a API do back-end e apresentar uma interface gráfica amigável para o usuário interagir com o sistema.
 
 
 ## ⚙️ 4. Funcionalidades do Back-end
