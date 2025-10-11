@@ -24,8 +24,9 @@ export class No implements INo {
 
     /**
      * Calcula o custo heurístico (h) para um estado.
-     * A heurística é a área total das peças restantes dividida pela largura da chapa,
-     * dando uma estimativa otimista do comprimento mínimo ainda necessário.
+     * A heurística possui duas estimativas: A área total das peças restantes dividida pela largura da chapa,
+     * dando uma estimativa otimista do comprimento mínimo ainda necessário, e a maior dimensão a ser alocada
+     * dentre as peças restantes.
      */
     private calcularCustoH(estado: IEstado, larguraChapa: number): number {
         // Se não há peças, o custo futuro é zero
